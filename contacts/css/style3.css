@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    margin: 0;
+    padding-top: 30px;
+    font-family: sans-serif;
+    color: cadetblue;
+    text-align: center;
+    background: palegoldenrod;
+}
+.contacts {
+    margin: 15px;
+    padding: 10px;
+}
+.contact {
+    border: 1px solid chocolate;
+    margin-bottom: 5px;
+}
+.contact h3 {
+    position: relative;
+    top: 12px;
+}
+  
+ .contact h4 {
+    color: #666;
+    font-size: 0.8rem;
+}
+  
+ .contact p {
+    text-align: justify;
+    padding: 20px;
+} 

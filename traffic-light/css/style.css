@@ -1,0 +1,74 @@
+ body {
+    background-color: steelblue;
+ }
+
+ .container {
+    padding-top: 50px;
+    padding-left: 150px;
+ }
+    
+ #feu {
+    width: 200px;
+    height: 400px;
+    background:rgb(77, 77, 77);
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1.5px solid silver;
+}
+#feu:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 70px;
+    width: 64px;
+    height: 220px;
+    background: rgb(77, 77, 77);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1.5px solid silver;
+ }
+ .rouge {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background: red;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid honeydew;
+    z-index: 1;
+}
+.orange {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    background: orange;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid honeydew;
+}
+.vert {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    background: green;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid honeydew;
+ }
+
+ .appel {
+     position: absolute;
+     top: 550px;
+     left: 87px;
+ }
+    .appel button{
+        background: silver;
+        border-radius: 5px;
+        width: 30px;
+        height: 50px;
+    }
