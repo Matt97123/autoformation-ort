@@ -5,31 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="shortcut icon" href="./img/bootstrap.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>TP bootstrap</title>
 </head>
 <body>
     <!-- NAVIGATION -->
-    <div class="navbar p-3 bg-dark text-white">
-        <!-- <div class="row"> -->
-            <!-- <div class="col"> -->
-                <h1>Bienvenue!</h1> 
-            <!-- </div>
-            <div class="col mt-1"> -->
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#"><h4>Accueil</h4></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#"><h4>Présentation</h4></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#"><h4>Contact</h4></a>
-                    </li>
-                </ul>
-            <!-- </div> -->
-        <!-- </div> -->
-    </div>
+    <header class="navbar p-3 bg-dark text-white" id="accueil">
+      <h1>Bienvenue!</h1> 
+      <ul class="nav justify-content-end">
+          <li class="nav-item">
+          <a class="nav-link active" href="#accueil"><h4>Accueil</h4></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#services"><h4>Présentation</h4></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#contact"><h4>Nous contacter</h4></a>
+          </li>
+      </ul>
+    </header>
 
     <!-- CAROUSEL -->
     <div class="mx-auto w-100 p-3 bg-secondary" >
@@ -60,7 +56,7 @@
     </div>
 
     <!-- SERVICES -->
-    <div class="container-fluid bg-warning">
+    <main class="container-fluid bg-warning" id="services">
         <div class="row">
           <div class="col-sm text-center mb-4">
             <img src="./img/sun-umbrella.png" 
@@ -90,32 +86,28 @@
             doloremque nesciunt praesentium cumque.
           </div>
         </div>
-      </div>
+      </main>
 
       <!-- OUR TEAM -->
       <div class="container-fluid bg-success">
         <div class="row text-center">
-          <div class="col col-sm p-3 border border-right-0 border-dark"><img src="./img/avatar.png" 
-            class="p-4 m-4" alt="avatar"></div>
-          <div class="col col-sm p-3 border border-right-0 border-dark"><img src="./img/woman.png" 
-            class="p-4 m-4" alt="woman"></div>
-          <div class="col col-sm p-3 border border-dark"><img src="./img/avatar.png" 
-            class="p-4 m-4" alt="avatar"></div>
-          <div class="w-100"></div>
-          <div class="col col-sm p-3 border border-top-0 border-right-0 border-dark"><strong>Hugo A.</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nisi! Ducimus suscipit quam doloribus, dignissimos voluptates aperiam saepe cupiditate possimus dolor optio! Voluptate tempora est aperiam itaque dolore ut nam.Cumque hic ea temporibus sit labore reiciendis minima saepe. Quia doloribus molestiae vitae quis fugiat iure ipsam, facere minus perferendis, fugit repellendus id consequuntur alias vel reprehenderit perspiciatis voluptate dolorum!</div>
-          <div class="col col-sm p-3 border border-top-0 border-right-0 border-dark"><strong>Laura B.</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nisi! Ducimus suscipit quam doloribus, dignissimos voluptates aperiam saepe cupiditate possimus dolor optio! Voluptate tempora est aperiam itaque dolore ut nam.Cumque hic ea temporibus sit labore reiciendis minima saepe. Quia doloribus molestiae vitae quis fugiat iure ipsam, facere minus perferendis, fugit repellendus id consequuntur alias vel reprehenderit perspiciatis voluptate dolorum!</div>
-          <div class="col col-sm p-3 border border-top-0 border-dark"><strong>Marcus C.</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nisi! Ducimus suscipit quam doloribus, dignissimos voluptates aperiam saepe cupiditate possimus dolor optio! Voluptate tempora est aperiam itaque dolore ut nam.Cumque hic ea temporibus sit labore reiciendis minima saepe. Quia doloribus molestiae vitae quis fugiat iure ipsam, facere minus perferendis, fugit repellendus id consequuntur alias vel reprehenderit perspiciatis voluptate dolorum!</div>
+          <div class="col col-sm p-3 border border-top-0 border-right-0 border-dark"><img src="./img/avatar.png" 
+            class="p-4 m-4" alt="avatar"><br><strong>Hugo A.</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nisi! Ducimus suscipit quam doloribus, dignissimos voluptates aperiam saepe cupiditate possimus dolor optio! Voluptate tempora est aperiam itaque dolore ut nam.Cumque hic ea temporibus sit labore reiciendis minima saepe. Quia doloribus molestiae vitae quis fugiat iure ipsam, facere minus perferendis, fugit repellendus id consequuntur alias vel reprehenderit perspiciatis voluptate dolorum!</div>
+          <div class="col col-sm p-3 border border-top-0 border-right-0 border-dark"><img src="./img/woman.png" 
+            class="p-4 m-4" alt="woman"><br><strong>Laura B.</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nisi! Ducimus suscipit quam doloribus, dignissimos voluptates aperiam saepe cupiditate possimus dolor optio! Voluptate tempora est aperiam itaque dolore ut nam.Cumque hic ea temporibus sit labore reiciendis minima saepe. Quia doloribus molestiae vitae quis fugiat iure ipsam, facere minus perferendis, fugit repellendus id consequuntur alias vel reprehenderit perspiciatis voluptate dolorum!</div>
+          <div class="col col-sm p-3 border border-top-0 border-dark"><img src="./img/avatar.png" 
+            class="p-4 m-4" alt="avatar"><br><strong>Marcus C.</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nisi! Ducimus suscipit quam doloribus, dignissimos voluptates aperiam saepe cupiditate possimus dolor optio! Voluptate tempora est aperiam itaque dolore ut nam.Cumque hic ea temporibus sit labore reiciendis minima saepe. Quia doloribus molestiae vitae quis fugiat iure ipsam, facere minus perferendis, fugit repellendus id consequuntur alias vel reprehenderit perspiciatis voluptate dolorum!</div>
         </div>
       </div>
 
       <!-- PORTFOLIO -->
       <div class="container-fluid bg-dark text-white">
-        <div class="row">
-          <div class="col p-4 border border-top-0 border-right-0 border-dark text-center"><strong><i>Portfolio</i></strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur pariatur doloribus hic nihil eaque quo maiores labore repellat non quod, quae, optio consectetur suscipit molestiae doloremque ipsam tempora alias!
+        <div class="row text-center">
+          <div class="col p-3 my-auto"><strong><i>Portfolio</i></strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur pariatur doloribus hic nihil eaque quo maiores labore repellat non quod, quae, optio consectetur suscipit molestiae doloremque ipsam tempora alias!
           Totam eligendi cum, doloremque earum repellat temporibus nostrum omnis itaque quo molestias eius animi repellendus sint praesentium officia pariatur, eos ab illum natus. Facilis iure quibusdam maxime, perspiciatis quas ipsam.
           Veritatis voluptatibus harum consequatur quidem, sit in enim eos odio debitis dolores, autem porro cupiditate, non sed expedita. Explicabo nostrum mollitia iure voluptate, voluptatibus quia impedit a aut autem ratione.
           </div>
-          <div class="col my-auto border border-top-0 border-dark w-75 p-2 bg-dark">
+          <div class="col-auto p-3 my-auto mx-auto">
               <img src="./img/aerial-photography-of-vehicle-parked-on-beach-near-bushes.jpg" 
               class="d-block w-100" alt="aerial-photography-of-vehicle-parked-on-beach-near-bushes">
           </div>
@@ -123,22 +115,22 @@
       </div>
    
       <!-- CONTACT -->
-      <div class="container-fluid">
-        <div class="row bg-warning">
+      <div class="container-fluid bg-warning" id="contact">
+        <div class="row">
         <!--Google map-->
-            <div class="col border p-3 text-center">
+            <div class="col col-sm p-5 border border-top-0 border-right-0 text-center">
                 <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                 class="my-auto" frameborder="3" allowfullscreen></iframe>
             </div>
             <!--Google Maps-->
-           <form class="col border text-center p-3">
+           <form class="col col-sm p-5 border border-top-0 text-center">
                 <div class="form-group row">
-                    <div class="col-sm-8 mx-auto">
+                    <div class="col col-sm-8 mx-auto">
                     <input type="text" class="form-control" id="colFormLabel" placeholder="Name">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-sm-8 mx-auto">
+                    <div class="col col-sm-8 mx-auto">
                     <textarea class="form-control form-control-sm" placeholder="Message"></textarea>
                     </div>
                 </div>
@@ -149,13 +141,46 @@
 
       <!-- FOOTER -->
 
-      <div class="container-fluid bg-danger">
+      <footer class="container-fluid bg-dark text-white">
         <div class="row text-center">
-            <div class="col col-sm p-3 border border-right-0 border-dark"><strong>Menu</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum reprehenderit minus aliquam, incidunt nulla, illo vero consequuntur corporis consectetur unde natus distinctio quod doloribus repellat praesentium, cum suscipit asperiores? Voluptatibus!Cupiditate quas quod pariatur doloribus quasi, esse quam explicabo assumenda aliquid excepturi commodi nobis quae aut accusamus? Soluta atque, culpa nostrum vel deleniti id! Excepturi nobis illo nulla cupiditate doloribus.</div>
-            <div class="col col-sm p-3 border border-right-0 border-dark"><strong>Qui sommes-nous?</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum reprehenderit minus aliquam, incidunt nulla, illo vero consequuntur corporis consectetur unde natus distinctio quod doloribus repellat praesentium, cum suscipit asperiores? Voluptatibus!Cupiditate quas quod pariatur doloribus quasi, esse quam explicabo assumenda aliquid excepturi commodi nobis quae aut accusamus? Soluta atque, culpa nostrum vel deleniti id! Excepturi nobis illo nulla cupiditate doloribus.</div>
-            <div class="col col-sm p-3 border border-dark"><strong>Mentions légales</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum reprehenderit minus aliquam, incidunt nulla, illo vero consequuntur corporis consectetur unde natus distinctio quod doloribus repellat praesentium, cum suscipit asperiores? Voluptatibus!Cupiditate quas quod pariatur doloribus quasi, esse quam explicabo assumenda aliquid excepturi commodi nobis quae aut accusamus? Soluta atque, culpa nostrum vel deleniti id! Excepturi nobis illo nulla cupiditate doloribus.</div>
-          </div>
-      </div>
+                <ul class="col col-sm p-3 list-group"><strong>Menu</strong>
+                  <li class="list-group-item bg-dark mt-1">
+                    <a class="" href="#accueil">Accueil</a>
+                  </li>
+                  <li class="list-group-item bg-dark">
+                    <a class="" href="#services">Présentation</a>
+                  </li>
+                  <li class="list-group-item bg-dark">
+                    <a class="" href="#contact">Nous contacter</a>
+                  </li>
+              </ul>
+
+              <ul class="col col-sm p-3 list-group"><strong>Nos réseaux</strong>
+                <li class="list-group-item bg-dark mt-1">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="list-group-item bg-dark">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="list-group-item bg-dark">
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+
+            <ul class="col col-sm p-3 list-group"><strong>À propos</strong>
+              <li class="list-group-item bg-dark mt-1">
+                <a class="" href="#">Cookies</a>
+              </li>
+              <li class="list-group-item bg-dark">
+                <a class="" href="#">Mentions légales</a>
+              </li>
+              <li class="list-group-item bg-dark">
+                <a class="" href="#">Données personnelles</a>
+              </li>
+          </ul>
+        </div> 
+      </footer>
+
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
